@@ -1,0 +1,10 @@
+Email :<input type="text" [(ngModel)]="email"> <br>
+
+Password :<input type="password" [(ngModel)]="password"><br>
+
+<div *ngIf="errorMessage" class="alert alert-danger">{{errorMessage}}</div>
+<button (click)="login()">Login</button>
+
+<a routerLink="/signup">New to Ashu Kart ? Click here to Signup</a>
+
+
